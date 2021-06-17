@@ -59,27 +59,29 @@ divisible_by_seven()
 #question7
  
 
-def greetings(name,age):
-    
-    students = [
-    {"age": 19, "name": "Eunice"},
-     {"age": 21, "name": "Agnes"},
-    {"age": 18, "name": "Teresa"},
-    {"age": 22, "name": "Asha"}
-    ]
+def greetings():
+    students=[{"age":19,"name":"Eunice"},{"age":21,"name":"Agnes"},{"age":18,"name":"Teresa"},{"age":22,"name":"Asha"}]
+    for x in students:
+        age=x["age"]
+        name=x["name"]
+        year=2021-age
+    print(f"Hello {name} you were born in the year {year}.")
+greetings()
 
 
-
-
-#Question8
 class Rectangle:
-    def __init__(self,width,height):
-        self.width= width
-        self.height= height
+    def __init__(self,width,length):
+        self.width=width
+        self.length=length
+    
 
-    def area(self): 
-        return    
-
+    def area(self):
+        A=self.width*self.length
+        return f"{A}"
+    
+    def perimeter(self):
+        P=((2*self.length)+(2*self.width))
+        return f"{P}"
 
         
  
